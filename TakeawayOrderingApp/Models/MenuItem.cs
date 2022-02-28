@@ -22,7 +22,7 @@ namespace TakeawayOrderingApp.Models
         public ICollection<string> Ingredients { get; set; }
 
         [Required]
-        [Range(1, 9999)]
+        [DataType(Da)]
         public double Price { get; set; }
 
         [ForeignKey("CategoryId")]
