@@ -7,7 +7,7 @@ namespace TakeawayOrderingApp.Models
     {
         [Key]
         [Required]
-        public int Id { get; set; }
+        public override string Id { get; set; }
 
         [Required]
         public string FirstName { get; set; }
@@ -27,7 +27,7 @@ namespace TakeawayOrderingApp.Models
 
         [Required]
         [DataType(DataType.PhoneNumber)]
-        public int PhoneNumber { get; set; }
+        public override string PhoneNumber { get; set; }
 
 
 

@@ -19,7 +19,7 @@ namespace TakeawayOrderingApp.Models
 
         public string Image { get; set; }
 
-        public ICollection<string> Ingredients { get; set; }
+        public string Ingredients { get; set; }
 
         [Required]
         [Range(1, int.MaxValue, ErrorMessage = "Price should be greater than £1")]
